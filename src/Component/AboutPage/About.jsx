@@ -11,12 +11,12 @@ const About = () => {
         <div
           className="flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-20"
           data-aos="fade-up">
-          <div className=" max-w-sm overflow-hidden rounded-xl border-2 border-blue-400">
+          <div className=" max-w-sm overflow-hidden rounded-2xl border-2 border-blue-400">
             <img
               src="/images/Profile.jpg"
               alt="Profile"
               width={350}
-              className="rounded-xl shadow-lg transform transition duration-700 hover:scale-110"
+              className="shadow-lg transform transition duration-700 hover:scale-110"
             />
           </div>
 
