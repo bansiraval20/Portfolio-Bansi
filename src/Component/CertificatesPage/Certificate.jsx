@@ -1,5 +1,4 @@
 import React from "react";
-import SkillsCard from "../SkillsPage/SkillsCard";
 import CertificateCard from "./CertificateCard";
 
 const Certificate = () => {

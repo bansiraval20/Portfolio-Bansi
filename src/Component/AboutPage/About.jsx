@@ -13,7 +13,7 @@ const About = () => {
           data-aos="fade-up">
           <div className=" max-w-sm overflow-hidden rounded-xl border-2 border-blue-400">
             <img
-              src="./Profile.jpg"
+              src="/images/Profile.jpg"
               alt="Profile"
               width={350}
               className="rounded-xl shadow-lg transform transition duration-700 hover:scale-110"

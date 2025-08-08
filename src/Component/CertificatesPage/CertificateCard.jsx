@@ -14,7 +14,7 @@ const CertificateCard = () => {
               <div className="font-medium text-white text-xl">{Item.name}</div>
               <div className="flex justify-center">
                 
-                <Button Document="/public/Bansi Cv.pdf" Icon={<Item.Icon className="text-xl" />} text="Download"/>
+                <Button Document="/Bansi Cv.pdf" Icon={<Item.Icon className="text-xl" />} text="Download"/>
               </div>
             </div>
           ))}
