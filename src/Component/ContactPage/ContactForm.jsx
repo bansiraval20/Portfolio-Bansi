@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { ContactFormData, textareaData } from "../constant";
 import emailjs from "emailjs-com";
 import Button from "../Button";
-import { toast, Toaster } from "react-hot-toast";
+import { toast } from "react-hot-toast";
 import "aos/dist/aos.css";
 
 const ContactForm = () => {
@@ -35,7 +35,7 @@ const ContactForm = () => {
       data-aos="fade-up"
     >
       <div className="w-full max-w-lg mx-auto">
-        <Toaster position="top-center" reverseOrder={false} />
+
         
         <form
           ref={form}
