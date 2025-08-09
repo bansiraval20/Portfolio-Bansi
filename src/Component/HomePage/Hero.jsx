@@ -1,6 +1,5 @@
 import React from "react";
 import Button from "../Button";
-import Button2 from "../Button2";
 
 const Hero = () => {
   return (
@@ -21,8 +20,7 @@ const Hero = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
-          <Button text="Get In Touch" />
-          <Button2 text2="Learn More" />
+          <Button Document="/Contact" text="Get In Touch" />
         </div>
       </div>
     </section>
