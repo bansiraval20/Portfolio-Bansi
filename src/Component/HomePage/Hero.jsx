@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../Button";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -20,9 +21,9 @@ const Hero = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
-          <a href="/contact">
+          <Link to="/contact">
             <Button text="Get In Touch" />
-          </a>
+          </Link>
         </div>
       </div>
     </section>
