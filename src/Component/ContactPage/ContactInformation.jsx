@@ -1,54 +1,60 @@
 import React from "react";
-import { FaMessage } from "react-icons/fa6";
-import { FiGithub, FiInstagram, FiLinkedin } from "react-icons/fi";
-import { IoLocationOutline } from "react-icons/io5";
-import { MdOutlineEmail, MdOutlinePhone } from "react-icons/md";
-import ContactForm from "./ContactForm";
+import { CertificateInformationIconData } from "../constant";
+import SocialIcons from "./SocialIcons";
 
 const ContactInformation = () => {
   return (
-    <>
-      <div className="flex flex-col gap-14 text-gray-300 max-w-2xl">
-        <div className="flex flex-col gap-5">
-          <h2
-            className="text-2xl sm:text-3xl font-semibold text-white transition duration-500"
-            data-aos="fade-right">
-            Let's <span className="text-blue-400">Connect</span>
-          </h2>
+    <div
+      className="flex flex-col gap-14 text-gray-300 max-w-2xl p-4 sm:p-6"
+    >
+      {/* Heading */}
+      <div className="flex flex-col gap-5">
+        <h2
+          className="text-3xl sm:text-4xl font-bold text-white"
+          data-aos="fade-right"
+          data-aos-duration="800"
+        >
+          Let’s <span className="text-blue-400">Connect</span>
+        </h2>
 
-          <p className="text-base w-lg sm:text-lg leading-relaxed">
-            I'm always interested in new opportunities and exciting projects.
-            Feel free to reach out if you'd like to work together!
-          </p>
-          <div className="flex flex-col gap-3">
-            <div className="flex items-center gap-5">
-              <MdOutlineEmail className="text-2xl text-blue-400" />
-              <p className="text-lg  font-medium">bansiraval40337@gmail.com</p>
-            </div>
-            <div className="flex items-center gap-5">
-              <MdOutlinePhone className="text-2xl text-blue-400" />
-              <p className="text-lg  font-medium">+91 9054492128</p>
-            </div>
-            <div className="flex items-center gap-5">
-              <IoLocationOutline className="text-2xl text-blue-400" />
-              <p className="text-lg  font-medium">Unjha-Gujarat ,India</p>
-            </div>
-          </div>
-        </div>
+        {/* Description */}
+        <p
+          className="text-base sm:text-lg leading-relaxed text-gray-400"
+          data-aos="fade-up"
+          data-aos-delay="150"
+        >
+          I’m always open to collaborating on innovative ideas and exciting
+          projects. Feel free to reach out if you think we can create something
+          amazing together.
+        </p>
 
-        <div className="flex gap-9">
-          <a href="https://github.com/bansiraval20">
-            <FiGithub className="text-2xl" />
-          </a>
-          <a href="https://www.linkedin.com/in/banshi-raval/">
-            <FiLinkedin className="text-2xl" />
-          </a>
-          <a href="https://www.instagram.com/bansi_6419/">
-            <FiInstagram className="text-2xl" />
-          </a>
+        {/* Contact Info */}
+        <div
+          className="flex flex-col gap-4"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+          {CertificateInformationIconData.map((item, index) => (
+            <div
+              key={index}
+              className="flex items-center gap-4 group hover:translate-x-1 transition-transform duration-300"
+            >
+              <div className="p-3 rounded-lg bg-blue-500/10 group-hover:bg-blue-500/20 transition-colors">
+                <item.Icon className="text-2xl text-blue-400" />
+              </div>
+              <p className="text-lg font-medium text-gray-200">
+                {item.title}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
-    </>
+
+      {/* Social Icons */}
+      <div data-aos="fade-up" data-aos-delay="500">
+        <SocialIcons />
+      </div>
+    </div>
   );
 };
 
